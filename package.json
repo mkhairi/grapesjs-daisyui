@@ -1,11 +1,11 @@
 {
-    "name": "grapesjs-tailwind",
+    "name": "grapesjs-daisyui",
     "version": "1.0.11",
     "description": "Grapesjs Tailwind",
-    "main": "dist/grapesjs-tailwind.min.js",
+    "main": "dist/grapesjs-daisyui.min.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Ju99ernaut/grapesjs-tailwind.git"
+        "url": "https://github.com/mkhairi/grapesjs-daisyui.git"
     },
     "scripts": {
         "start": "grapesjs-cli serve",

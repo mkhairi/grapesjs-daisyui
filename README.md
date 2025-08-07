@@ -1,6 +1,6 @@
 # Grapesjs Tailwind(WIP)
 
-[DEMO](https://codepen.io/ju99ernaut/pen/BaKGadb)
+[DEMO](https://codepen.io/mkhairi/pen/BaKGadb)
 
 > Requires [`grapesjs-plugin-forms`](https://github.com/artf/grapesjs-plugin-forms)
 
@@ -10,7 +10,7 @@ Tailwind intergration which includes the complete set of blocks from [Tailblocks
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
 <script src="https://unpkg.com/grapesjs"></script>
-<script src="https://unpkg.com/grapesjs-tailwind"></script>
+<script src="https://unpkg.com/grapesjs-daisyui"></script>
 
 <div id="gjs"></div>
 ```
@@ -26,7 +26,7 @@ const editor = grapesjs.init({
   fromElement: true,
   storageManager: false,
   selectorManager: { escapeName },
-  plugins: ['grapesjs-tailwind'],
+  plugins: ['grapesjs-daisyui'],
 });
 ```
 
@@ -69,7 +69,7 @@ body, html {
 
 ## Summary
 
-* Plugin name: `grapesjs-tailwind`
+* Plugin name: `grapesjs-daisyui`
 * Commands
     * `get-tailwindCss` - Get Tailwind CSS of your page
     * `open-update-theme` - Open theme modal
@@ -105,11 +105,11 @@ editor.runCommand('get-tailwindCss', { /* Options here */ });
 ## Download
 
 * CDN
-  * `https://unpkg.com/grapesjs-tailwind`
+  * `https://unpkg.com/grapesjs-daisyui`
 * NPM
-  * `npm i grapesjs-tailwind`
+  * `npm i grapesjs-daisyui`
 * GIT
-  * `git clone https://github.com/Ju99ernaut/grapesjs-tailwind.git`
+  * `git clone https://github.com/mkhairi/grapesjs-daisyui.git`
 
 
 
@@ -119,7 +119,7 @@ Directly in the browser
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
 <script src="https://unpkg.com/grapesjs"></script>
-<script src="path/to/grapesjs-tailwind.min.js"></script>
+<script src="path/to/grapesjs-daisyui.min.js"></script>
 
 <div id="gjs"></div>
 
@@ -127,9 +127,9 @@ Directly in the browser
   var editor = grapesjs.init({
       container: '#gjs',
       // ...
-      plugins: ['grapesjs-tailwind'],
+      plugins: ['grapesjs-daisyui'],
       pluginsOpts: {
-        'grapesjs-tailwind': { /* options */ }
+        'grapesjs-daisyui': { /* options */ }
       }
   });
 </script>
@@ -138,7 +138,7 @@ Directly in the browser
 Modern javascript
 ```js
 import grapesjs from 'grapesjs';
-import plugin from 'grapesjs-tailwind';
+import plugin from 'grapesjs-daisyui';
 import 'grapesjs/dist/css/grapes.min.css';
 
 const editor = grapesjs.init({
@@ -162,8 +162,8 @@ const editor = grapesjs.init({
 Clone the repository
 
 ```sh
-$ git clone https://github.com/Ju99ernaut/grapesjs-tailwind.git
-$ cd grapesjs-tailwind
+$ git clone https://github.com/mkhairi/grapesjs-daisyui.git
+$ cd grapesjs-daisyui
 ```
 
 Install dependencies

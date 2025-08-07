@@ -1,5 +1,5 @@
 export default {
-    'grapesjs-tailwind': {
+    'grapesjs-daisyui': {
         // 'key': 'value',
     },
 };

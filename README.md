@@ -1,4 +1,4 @@
-# Grapesjs Tailwind(WIP)
+# Grapesjs daisyUI
 
 [DEMO](https://codepen.io/mkhairi/pen/BaKGadb)
 
@@ -95,7 +95,8 @@ editor.runCommand('get-tailwindCss', { /* Options here */ });
 
 | Option | Description | Default |
 |-|-|-
-| `tailwindPlayCdn` | URL for fetching tailwind play cdn | `https://cdn.tailwindcss.com` |
+| `tailwindPlayCdn` | URL for fetching tailwind play cdn | `https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4` |
+| `daisyuiCdn` | URL for daisyUI play cdn | `https://cdn.jsdelivr.net/npm/daisyui@5` |
 | `plugins` | array to include tailwind 1st party plugins | `[]` |
 | `config` | custom tailwind config | `{}` |
 | `changeThemeText` | Change theme modal title | `Change Theme` |

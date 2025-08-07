@@ -7,7 +7,8 @@ export default (editor, opts = {}) => {
     ...{
       i18n: {},
       // default options
-      tailwindPlayCdn: 'https://cdn.tailwindcss.com',
+      tailwindPlayCdn: 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4',
+      daisyuiCdn: 'https://cdn.jsdelivr.net/npm/daisyui@5',
       plugins: [],
       config: {},
       cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; }`,
@@ -31,7 +32,7 @@ export default (editor, opts = {}) => {
 
     if (!iframe) return;
 
-    const { tailwindPlayCdn, plugins, config, cover } = options;
+    const { tailwindPlayCdn, daisyuiCdn, plugins, config, cover } = options;
     const init = () => {
       iframe.contentWindow.tailwind.config = config;
     }
@@ -39,6 +40,13 @@ export default (editor, opts = {}) => {
     const script = document.createElement('script');
     script.src = tailwindPlayCdn + (plugins.length ? `?plugins=${plugins.join()}` : '');
     script.onload = init;
+
+    const daisyuiCss = document.createElement('link');
+    daisyuiCss.rel = 'stylesheet';
+    daisyuiCss.href = daisyuiCdn;
+
+    // Append daisyui css
+    iframe.contentDocument.head.appendChild(daisyuiCss);
 
     const cssStyle = document.createElement('style');
     cssStyle.innerHTML = cover;

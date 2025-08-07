@@ -1,7 +1,7 @@
 {
     "name": "grapesjs-daisyui",
-    "version": "1.0.11",
-    "description": "Grapesjs Tailwind",
+    "version": "1.0.15",
+    "description": "Grapesjs DaisyUI",
     "main": "dist/grapesjs-daisyui.min.js",
     "repository": {
         "type": "git",

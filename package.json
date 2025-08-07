@@ -1,6 +1,6 @@
 {
     "name": "grapesjs-daisyui",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Grapesjs daisyUI",
     "main": "dist/grapesjs-daisyui.min.js",
     "repository": {
